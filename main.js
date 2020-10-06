@@ -9,7 +9,6 @@
 
 
 
-
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
@@ -21,6 +20,10 @@ if (typeof xify === 'undefined') {
 
 if (typeof smilify === 'undefined') {
   smilify = undefined;
+}
+
+if (typeof yellingChars === 'undefined') {
+  yellingChars = undefined;
 }
 
 if (typeof numberedChars === 'undefined') {
@@ -76,6 +79,7 @@ module.exports = {
   xify,
   smilify,
   indexedChars,
+  yellingChars, // <-- add this line here (no need for the comment, obvs)
   numberedChars,
   exclaim,
   repeatIt,
