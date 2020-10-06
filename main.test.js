@@ -1,18 +1,66 @@
 const {
+  xify,
+  smilify,
+  yellingChars,
   indexedChars,
+  numberedChars,
   exclaim,
   repeatIt,
   truncate,
   ciEmailify,
   reverse,
   onlyVowels,
-  numberedChars,
   crazyCase,
   titleCase,
   camelCase,
   crazyCase2ReturnOfCrazyCase,
 } = require('./main.js')
 
+
+describe('xify', () => {
+  it(`returns a string the same length as the given string, but with each character replaced by the character 'x'`, () => {
+    const str1 = 'hello';
+    const indexed1 = 'xxxxx';
+    const str2 = 'hi there';
+    const indexed2 = 'xxxxxxxx';
+    const str3 = 'a house divided cannot stand';
+    const indexed3 = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+
+    expect(xify(str1)).toBe(indexed1);
+    expect(xify(str2)).toBe(indexed2);
+    expect(xify(str3)).toBe(indexed3);
+  })
+})
+
+describe('smilify', () => {
+  it(`returns a string the same length as the given str, but with each character replaced by a smiling emoji`, () => {
+    const str1 = 'emoji';
+    const indexed1 = '😊😊😊😊😊';
+    const str2 = 'smile!';
+    const indexed2 = '😊😊😊😊😊😊';
+    const str3 = 'a house divided cannot smile';
+    const indexed3 = '😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊';
+
+    expect(smilify(str1)).toBe(indexed1);
+    expect(smilify(str2)).toBe(indexed2);
+    expect(smilify(str3)).toBe(indexed3);
+  })
+})
+
+describe('yellingChars', () => {
+  it(`adds an exclamation point after each character in the given str`, () => {
+    const str1 = 'goodness';
+    const indexed1 = 'g!o!o!d!n!e!s!s!';
+    const str2 = 'oh hello';
+    const indexed2 = 'o!h! !h!e!l!l!o!';
+    const str3 = 'well bye';
+    const indexed3 = 'w!e!l!l! !b!y!e!';
+
+    expect(yellingChars(str1)).toBe(indexed1);
+    expect(yellingChars(str2)).toBe(indexed2);
+    expect(yellingChars(str3)).toBe(indexed3);
+  })
+})
 
 describe('indexedChars', () => {
   it(`adds a 0 before a one-character string`, () => {
@@ -56,7 +104,7 @@ describe('repeatIt', () => {
 });
 
 describe('truncate', () => {
-  it(`shortens a long string to 15 characters plus an elipsis (...)`, () => {
+  it(`shortens a long string to 15 characters plus an ellipsis (...)`, () => {
     const longString1 = 'The fault, dear Brutus, is not in our stars, but in ourselves.'
     const truncated1 = 'The fault, dear...'
     const longString2 = "Well, that's just, like, your opinion man." 
@@ -87,7 +135,7 @@ describe('ciEmailify', () => {
 })
 
 describe('reverse', () => {
-  it(`reverses the string given`, () => {
+  it(`reverses the given string`, () => {
     expect(reverse('colin')).toBe('niloc')
     expect(reverse('mesuara')).toBe('arausem')
   })
@@ -121,7 +169,7 @@ describe('numberedChars', () => {
     expect(numberedChars(char2)).toBe(numbered2);
   })
 
-  it(`adds the number of each character before that character`, () => {
+  it(`adds the number of each character before that character in the given string`, () => {
     const str1 = 'hello';
     const numbered1 = '(1)h(2)e(3)l(4)l(5)o';
     const str2 = 'bye';

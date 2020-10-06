@@ -15,6 +15,18 @@
  *           PLEASE DON'T TOUCH!            *
  ********************************************/
 
+if (typeof xify === 'undefined') {
+  xify = undefined;
+}
+
+if (typeof smilify === 'undefined') {
+  smilify = undefined;
+}
+
+if (typeof numberedChars === 'undefined') {
+  numberedChars = undefined;
+}
+
 if (typeof indexedChars === 'undefined') {
   indexedChars = undefined;
 }
@@ -43,10 +55,6 @@ if (typeof onlyVowels === 'undefined') {
   onlyVowels = undefined;
 }
 
-if (typeof numberedChars === 'undefined') {
-  numberedChars = undefined;
-}
-
 if (typeof crazyCase === 'undefined') {
   crazyCase = undefined;
 }
@@ -65,14 +73,16 @@ if (typeof crazyCase2ReturnOfCrazyCase === 'undefined') {
 
 
 module.exports = {
+  xify,
+  smilify,
   indexedChars,
+  numberedChars,
   exclaim,
   repeatIt,
   truncate,
   ciEmailify,
   reverse,
   onlyVowels,
-  numberedChars,
   crazyCase,
   titleCase,
   camelCase,
