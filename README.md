@@ -21,11 +21,7 @@ This is your typical test-run assignment. `jest --watch-all` is your friend!
   * Examples:
     * xify('hello') -> 'xxxxx'
     * xify('hi there') -> 'xxxxxxxx'
-* `smilify` - returns the same string, but with every character replaced by a smiley face
-  * Examples:
-    * smilify('emoji') -> '😊😊😊😊😊'
-    * smilify('smile!') -> '😊😊😊😊😊😊'
-* `yellingChars` - returns the given string with an exlamation point after each character
+* `yellingChars` - returns the given string with an exclamation point after each character
   * Examples:
     * yellingChars('goodness') -> 'g!o!o!d!n!e!s!s!'
     * yellingChars('oh hello') -> 'o!h! !h!e!l!l!o!'
@@ -76,7 +72,7 @@ This is your typical test-run assignment. `jest --watch-all` is your friend!
 * `titleCase` - returns a transformed version of the given string where every word starts with a capital letter and every non-word-starting letter is lowercased
   * Examples:
     * titleCase('return of the king') -> 'Return Of The King'
-    * titleCase('cOde immerSives') -> 'Code Immersives'
+    * titleCase('cOde iMMerSives') -> 'Code Immersives'
 * `camelCase` - returns the given string in camel case
   * Examples:
     * camelCase('oh Hello') -> 'ohHello'
