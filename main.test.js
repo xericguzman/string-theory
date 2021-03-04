@@ -1,6 +1,5 @@
 const {
   xify,
-  smilify,
   yellingChars,
   indexedChars,
   numberedChars,
@@ -29,21 +28,6 @@ describe('xify', () => {
     expect(xify(str1)).toBe(indexed1);
     expect(xify(str2)).toBe(indexed2);
     expect(xify(str3)).toBe(indexed3);
-  })
-})
-
-describe('smilify', () => {
-  it(`returns a string the same length as the given str, but with each character replaced by a smiling emoji`, () => {
-    const str1 = 'emoji';
-    const indexed1 = '😊😊😊😊😊';
-    const str2 = 'smile!';
-    const indexed2 = '😊😊😊😊😊😊';
-    const str3 = 'a house divided cannot smile';
-    const indexed3 = '😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊';
-
-    expect(smilify(str1)).toBe(indexed1);
-    expect(smilify(str2)).toBe(indexed2);
-    expect(smilify(str3)).toBe(indexed3);
   })
 })
 
