@@ -1,21 +1,17 @@
 # String Theory
 
-### Introduction
+Let's do some string building!
 
-Let's use string building!
-
-
-### Workflow
-
-This is your typical test-run assignment. `jest --watch-all` is your friend!
+Start off by forking and cloning this assignment, then create a file `main.js` in which you'll write a series of functions.
 
 
 ### Guidelines
 
 * Other than `.toUpperCase` and `.toLowerCase`, don't use any string methods. Sure, `.slice` would be nice here, or `.repeat`. But you'll learn just a ton more if you use actual loops!
 
-
 ### Task
+
+Your task is to write a series of functions that execute the following tasks:
 
 * `xify` - returns the same string, but with every character replaced by an 'x'
   * Examples:
