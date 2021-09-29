@@ -60,6 +60,9 @@ Your task is to write a series of functions that execute the following tasks:
     * onlyVowels('Colin Jaffe') -> 'oiae'
     * onlyVowels('quickly') -> 'ui'
     * onlyVowels('Anthony DeRosa') -> 'Aoeoa'
+
+## Extra stretch goals
+
 * `crazyCase` - returns the given string with alternating lower and upper cases
   * Examples:
     * crazyCase('hello') -> 'hElLo'
